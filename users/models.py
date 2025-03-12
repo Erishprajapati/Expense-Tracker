@@ -15,11 +15,8 @@ class Profile(models.Model):
     ]
     
     gender = models.CharField(max_length=10, choices = gender_choices, default = "MALE")
-    role = models.CharField(max_length=10, choice= role_choices, default = "USER")
+    role = models.CharField(max_length=10, choices = role_choices, default = "USER")
 
     def __str__(self):
         return self.username
-    
-
-
     
